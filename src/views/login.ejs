@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Forgot Password</title>
+</head>
+
+<body>
+    <div class="container reset_password">
+
+        <div class="row justify-content-center" class="borderClass">
+            <div class="borderClass pd-20">
+                <div class="login-form login-area">
+                    <h3 class="text-header">Login</h3>
+                    <form id="form1" action="/user/login" method="POST" class="my-4 form-inline">
+
+                        <div class="form-group input_div">
+                            <label for="username" class="sr-only">Email</label>
+                            <input required placeholder="Email" type="text" name="email" id="email"
+                                class="form-control col mr-2">
+                        </div>
+
+                        <div class="form-group input_div">
+                            <label for="password" class="sr-only">Password</label>
+                            <input required placeholder="Password" type="password" name="password" id="password"
+                                class="form-control col mr-2">
+                        </div>
+                        <div class="button_cs">
+                            <button class=" btn btn-success signin_btn" id="btn-my" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <div id="error-message" class="red"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $("#form1").submit(function (e) {
+
+
+    });
+</script>
+<style>
+    .button_cs {
+        width: 100%;
+    }
+
+    .signin_btn {
+        width: 100%;
+        outline: none;
+        padding: 5px;
+        height: 35px;
+        margin-top: 15px;
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 17px;
+        background: #2196f3;
+        border: none;
+        color: #ffffff;
+        border-radius: 2px;
+    }
+
+    .reset_password {
+        margin: auto;
+        padding: 10px;
+        width: 350px;
+        margin-top: 50px;
+    }
+
+    .borderClass {
+        border: 1px solid #ccc;
+        padding: 20px;
+        padding-top: 0px;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    .login-area form {
+        display: block;
+        margin-bottom: 0 !important;
+
+    }
+
+    .login-area input {
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        padding: 5px;
+        height: 35px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .text-header {
+        font-size: 22px;
+        font-weight: 600
+    }
+
+    .pd-20 {
+        padding-top: 20px;
+    }
+
+    .red {
+        color: red;
+
+    }
+</style>
+
+</html>
